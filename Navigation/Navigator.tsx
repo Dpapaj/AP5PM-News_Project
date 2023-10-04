@@ -5,7 +5,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Text, View } from 'react-native';
 import Home from '../Screens/Home';
 import Saved from '../Screens/Saved';
-import { Entypo,MaterialIcons } from '@expo/vector-icons';
+import { Entypo,MaterialIcons, FontAwesome } from '@expo/vector-icons';
+import Maps from '../Screens/Maps';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -19,6 +20,9 @@ function HomeScreen(){
             <Tab.Screen options={{tabBarIcon(props){
                 return <MaterialIcons name="favorite" size={24} color="black" />
             },}} name="Saved" component={Saved} />
+            <Tab.Screen options={{tabBarIcon(props){
+                return <FontAwesome name="map" size={24} color="black" />
+            },}} name="Maps" component={Maps} />
         </Tab.Navigator>
     );
 }
