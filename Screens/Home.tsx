@@ -9,7 +9,7 @@ import { Item } from 'react-native-paper/lib/typescript/components/Drawer/Drawer
 
 
 const categories=["Technology","Sports","Food","Science","Health"]
-const API_KEY = "pub_30428cdfcc14db02698b852003b7c3bb4d37f"
+const API_KEY = "add_key"
 
 const Home = (props: ComponentNavigationProps) => {
   const [newsData, setnewsData] = useState<NewsData[]>([])
